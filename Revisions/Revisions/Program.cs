@@ -1,22 +1,25 @@
-﻿namespace Revision
+﻿using Revisions;
+
+namespace Revision
 {
-    class ForLoop
+    class Members
     {
         static void Main(string[] args)
         {
 
-            for (int i = 0; i <= 50; i = i + 4) 
+            Car Ferrari = new Car();    //creating objects
+            Ferrari.brand = "F1";       
+            Ferrari.color = "rainbow";      //assigning valueas
+            Ferrari.year =1920 ;
 
-            Console.WriteLine(i);
+            Car RangeRover = new Car();
+            RangeRover.brand = "velar";
+            RangeRover.color = "black";
+            RangeRover.year = 2022;
 
-
-            //for (int i = 0; i <= 10; i = i + 2)
-            //{
-            //    Console.WriteLine(i);
-            //}
-
-
-
+            Console.WriteLine(Ferrari.brand);
+            Console.WriteLine(RangeRover.brand);
+            Ferrari.raceCar();                      //calling method
         }
     }
 }
