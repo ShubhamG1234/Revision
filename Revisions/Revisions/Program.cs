@@ -1,24 +1,25 @@
 ﻿namespace Revision
 {
-    class Operator
+    class IfElse
     {
         static void Main(string[] args)
         {
-            int a = 12+10;
+            int a = 22;
             int b = 22;
-            int c = 33;    
+            int c = 33;
 
-            c += 3;                 //assignment operator
-
-            
-            Console.WriteLine(a + b);  //Arithmatic operator,addition
-            Console.WriteLine(a % b);  //Arithmatic operator,modulus reminder
-           
-            Console.WriteLine(a > b);  //Comparison Operators
-            
-            Console.WriteLine(c > b && c > a);  //Condition Operators
-
-
+            if (a>b)
+            {
+                Console.WriteLine("Greater Number is A");
+            }
+            else if (a<b)
+            {
+                Console.WriteLine("Greater Number is B");
+            }
+            else
+            {
+                Console.WriteLine("A is Equal to B");
+            }
 
 
         }
