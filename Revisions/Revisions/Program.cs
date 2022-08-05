@@ -1,20 +1,23 @@
 ﻿namespace Revision
 {
-    class variables
+    class TypeCasting
     {
         static void Main(string[] args)
         {
-            int age = 18;
-            string myName = "Bruce";
-            bool isItRight = true;              //Declaring Variables.
-            long mobileNo = 9999999999;
-            char aLetter = 'S';
-            double theDouble = 3.14;
+            int num = 18;
+            long mobileNo =num;  //Implicit Casting,converting lower data type to higher
+            
+            Console.WriteLine(num);
 
 
-            Console.WriteLine(age +"  "+ myName +"  " + mobileNo);
 
-            Console.WriteLine(age+theDouble);
-        }
+
+            double theDouble = 3.142;
+            int theInt = (int) theDouble;   //Explicit casting
+
+            Console.WriteLine(theDouble);
+            Console.WriteLine(theInt);
+
+         }
     }
 }
