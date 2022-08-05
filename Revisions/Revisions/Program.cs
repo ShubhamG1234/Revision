@@ -18,6 +18,13 @@
             Console.WriteLine(theDouble);
             Console.WriteLine(theInt);
 
+
+            Console.WriteLine(Convert.ToString(theInt));  //By using Conversion method
+            Console.WriteLine(Convert.ToDouble(num));
+
+            
+
+
          }
     }
 }
