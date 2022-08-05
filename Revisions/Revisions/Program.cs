@@ -1,30 +1,23 @@
 ﻿namespace Revision
 {
-    class TypeCasting
+    class TakeUserInput
     {
         static void Main(string[] args)
         {
-            int num = 18;
-            long mobileNo =num;  //Implicit Casting,converting lower data type to higher
-            
-            Console.WriteLine(num);
 
+            Console.Write("Enter Your Name:");
+            string yourName = Console.ReadLine();       //taking string input
 
+            Console.WriteLine("Good Mornig:" + yourName);
 
-
-            double theDouble = 3.142;
-            int theInt = (int) theDouble;   //Explicit casting
-
-            Console.WriteLine(theDouble);
-            Console.WriteLine(theInt);
-
-
-            Console.WriteLine(Convert.ToString(theInt));  //By using Conversion method
-            Console.WriteLine(Convert.ToDouble(num));
 
             
+            Console.Write("What is your weight:");
+            int weight = Convert.ToInt16(Console.ReadLine()); //taking number input
+           
+            Console.WriteLine("Your Weight is:" + weight);
 
 
-         }
+        }
     }
 }
