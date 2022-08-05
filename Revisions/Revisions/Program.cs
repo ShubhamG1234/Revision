@@ -1,21 +1,24 @@
 ﻿namespace Revision
 {
-    class TakeUserInput
+    class Operator
     {
         static void Main(string[] args)
         {
+            int a = 12+10;
+            int b = 22;
+            int c = 33;    
 
-            Console.Write("Enter Your Name:");
-            string yourName = Console.ReadLine();       //taking string input
-
-            Console.WriteLine("Good Mornig:" + yourName);
-
+            c += 3;                 //assignment operator
 
             
-            Console.Write("What is your weight:");
-            int weight = Convert.ToInt16(Console.ReadLine()); //taking number input
+            Console.WriteLine(a + b);  //Arithmatic operator,addition
+            Console.WriteLine(a % b);  //Arithmatic operator,modulus reminder
            
-            Console.WriteLine("Your Weight is:" + weight);
+            Console.WriteLine(a > b);  //Comparison Operators
+            
+            Console.WriteLine(c > b && c > a);  //Condition Operators
+
+
 
 
         }
