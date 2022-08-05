@@ -2,20 +2,18 @@
 
 namespace Revision
 {
-    class Constructors
+    class Inheritance
     {
         static void Main(string[] args)
         {
 
-            Car Ferrari = new Car("F1", "rainbow", 1920);    //passing multiple arguments
-           
+            BabyTiger tiger = new BabyTiger();  //creating object
+            tiger.eat();
+            tiger.sleeps();                     //calling methods
+            tiger.roars();
 
-            Car RangeRover = new Car("velar", "black", 2022);
-            
 
-            Console.WriteLine(Ferrari.brand);
-            Console.WriteLine(RangeRover.year);
-                               
+
         }
     }
 }
