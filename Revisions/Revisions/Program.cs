@@ -1,27 +1,21 @@
 ﻿namespace Revision
 {
-    class WhileLoop
+    class ForLoop
     {
         static void Main(string[] args)
         {
 
-            int X = 0;
+            for (int i = 0; i <= 50; i = i + 4) 
 
-            //while (X < 50) 
+            Console.WriteLine(i);
+
+
+            //for (int i = 0; i <= 10; i = i + 2)
             //{
-            //    Console.WriteLine(X);         //While loop
-            //    X++;
+            //    Console.WriteLine(i);
             //}
-            do
-            {
-                Console.WriteLine(X);              //do while loop
-                X++;
-            }                                   
-            while (X < 14);
 
 
-
-            
 
         }
     }
