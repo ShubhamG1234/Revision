@@ -1,32 +1,27 @@
 ﻿namespace Revision
 {
-    class SwitchCase
+    class WhileLoop
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter Your Age:");
-            int age = Convert.ToInt32(Console.ReadLine());
-            
+            int X = 0;
 
-
-                switch (age)
+            //while (X < 50) 
+            //{
+            //    Console.WriteLine(X);         //While loop
+            //    X++;
+            //}
+            do
             {
-                case <18 :
-                    Console.WriteLine("You are not Eligible");
-                    break;
-                case >18:
-                    Console.WriteLine("you are Eligible");
-                    break;
-                default:
-                    Console.WriteLine("welcome");
-                    break;
-               
+                Console.WriteLine(X);              //do while loop
+                X++;
+            }                                   
+            while (X < 14);
 
 
 
-
-            }
+            
 
         }
     }
