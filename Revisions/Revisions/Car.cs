@@ -11,9 +11,13 @@ namespace Revisions
         public string brand;
         public int year;
         public string color;            //declaring variables,fields
-        public void raceCar()
+        public Car(string carBrand,string carColor,int carYear)  //created car constructor with multiple parameters
         {
-            Console.WriteLine("Car is Ruunning");  //declaring method
+           brand=carBrand;
+            year = carYear;
+            color = carColor;
+
+
         }
 
     }

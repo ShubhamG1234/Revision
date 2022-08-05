@@ -2,24 +2,20 @@
 
 namespace Revision
 {
-    class Members
+    class Constructors
     {
         static void Main(string[] args)
         {
 
-            Car Ferrari = new Car();    //creating objects
-            Ferrari.brand = "F1";       
-            Ferrari.color = "rainbow";      //assigning valueas
-            Ferrari.year =1920 ;
+            Car Ferrari = new Car("F1", "rainbow", 1920);    //passing multiple arguments
+           
 
-            Car RangeRover = new Car();
-            RangeRover.brand = "velar";
-            RangeRover.color = "black";
-            RangeRover.year = 2022;
+            Car RangeRover = new Car("velar", "black", 2022);
+            
 
             Console.WriteLine(Ferrari.brand);
-            Console.WriteLine(RangeRover.brand);
-            Ferrari.raceCar();                      //calling method
+            Console.WriteLine(RangeRover.year);
+                               
         }
     }
 }
