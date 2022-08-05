@@ -1,26 +1,32 @@
 ﻿namespace Revision
 {
-    class IfElse
+    class SwitchCase
     {
         static void Main(string[] args)
         {
-            int a = 22;
-            int b = 22;
-            int c = 33;
 
-            if (a>b)
-            {
-                Console.WriteLine("Greater Number is A");
-            }
-            else if (a<b)
-            {
-                Console.WriteLine("Greater Number is B");
-            }
-            else
-            {
-                Console.WriteLine("A is Equal to B");
-            }
+            Console.WriteLine("Enter Your Age:");
+            int age = Convert.ToInt32(Console.ReadLine());
+            
 
+
+                switch (age)
+            {
+                case <18 :
+                    Console.WriteLine("You are not Eligible");
+                    break;
+                case >18:
+                    Console.WriteLine("you are Eligible");
+                    break;
+                default:
+                    Console.WriteLine("welcome");
+                    break;
+               
+
+
+
+
+            }
 
         }
     }
