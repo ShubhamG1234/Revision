@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Revisions
 {
-    public class Animal                 // Base or Parent class
-    {                                   //MultiLevel Inheritance
-        public void eat()              //Method
+    public class Animal                 
+    {                                           //RunTime polymorphism
+        public virtual void eat()              //Method ovrriding
         {
             Console.WriteLine("eating");    
         }           
     }
     public class Tiger : Animal         //derived class or child class
     {
-        public void roars()
+        public override void eat()
         {
-            Console.WriteLine("roaring");
+            Console.WriteLine("eating flesh");
         }
     }
     public class BabyTiger : Tiger
     {
-        public void sleeps()
+        public override void eat()
         {
-            Console.WriteLine("zzzzz");
+            Console.WriteLine("eating meat");
         }
     }
 }

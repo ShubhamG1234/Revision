@@ -2,15 +2,20 @@
 
 namespace Revision
 {
-    class Inheritance
+    class Polymorphism
     {
         static void Main(string[] args)
         {
+            Animal animal ;
 
-            BabyTiger tiger = new BabyTiger();  //creating object
-            tiger.eat();
-            tiger.sleeps();                     //calling methods
-            tiger.roars();
+            animal = new Animal();
+            animal.eat();
+
+            animal = new Tiger();
+            animal.eat();
+
+            animal = new BabyTiger();
+            animal.eat();
 
 
 
