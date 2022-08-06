@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace Revisions
 {
-    public class Animal                 
-    {                                           //RunTime polymorphism
-        public virtual void eat()              //Method ovrriding
+    abstract class Animal                 
+    {                                           //abstract class
+        public abstract void eat();             //abstract method
+        public void hunts()
         {
-            Console.WriteLine("eating");    
-        }           
+            Console.WriteLine("hunting");
+        }         
     }
-    public class Tiger : Animal         //derived class or child class
+    class Tiger : Animal         //derived class or child class
     {
         public override void eat()
         {
             Console.WriteLine("eating flesh");
         }
     }
-    public class BabyTiger : Tiger
+     class BabyTiger : Tiger
     {
         public override void eat()
         {

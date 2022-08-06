@@ -6,17 +6,10 @@ namespace Revision
     {
         static void Main(string[] args)
         {
-            Animal animal ;
-
-            animal = new Animal();
-            animal.eat();
-
-            animal = new Tiger();
-            animal.eat();
-
-            animal = new BabyTiger();
-            animal.eat();
-
+            Tiger tiger = new Tiger();
+            tiger.eat();
+            tiger.hunts();
+            
 
 
         }
