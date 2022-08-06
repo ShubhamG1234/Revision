@@ -2,14 +2,16 @@
 
 namespace Revision
 {
-    class Polymorphism
+    class InterfaceExample
     {
         static void Main(string[] args)
         {
-            Tiger tiger = new Tiger();
-            tiger.eat();
-            tiger.hunts();
-            
+            ClassOne firstClass = new ClassOne();
+            firstClass.methodOne();
+            firstClass.methodTwo();
+
+
+
 
 
         }
