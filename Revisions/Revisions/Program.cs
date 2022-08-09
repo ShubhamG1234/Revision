@@ -1,19 +1,23 @@
-﻿using Revisions;
+﻿using System;
+using System.Collections.Generic;
 
-namespace Revision
+public class List
 {
-    class InterfaceExample
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        //var names = new List<string>(){"Sanjay","Rahul","Nitish","Ramesh","Jack"};
+
+        var names = new List<string>();     //  list of strings 
+        names.Add( "Sanjay");
+        names.Add( "Rahul");
+        names.Add( "Nitish");
+        names.Add( "Ramesh");
+        names.Add( "Jack");
+
+
+        foreach (var name in names)          // iterating list element 
         {
-            ClassOne firstClass = new ClassOne();
-            firstClass.methodOne();
-            firstClass.methodTwo();
-
-
-
-
-
+            Console.WriteLine(names);
         }
     }
 }
