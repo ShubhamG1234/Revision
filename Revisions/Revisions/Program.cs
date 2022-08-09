@@ -1,23 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class HashSet
+public class Stack
 {
     public static void Main(string[] args)
     {
-        var names = new HashSet<string>(){"Sanjay","Rahul","Nitish","Ramesh","Jack"};
+        
+       Stack<string>names = new Stack<string>();      
+        names.Push("Sanjay");
+        names.Push("Rahul");
+        names.Push("Nitish");
+        names.Push("Ramesh");
+        names.Push("Jack");
+        
+       
 
-        //var names = new HashSet<string>();     //  list of strings 
-        //names.Add( "Sanjay");
-        //names.Add( "Rahul");
-        //names.Add( "Nitish");
-        //names.Add( "Ramesh");
-        //names.Add( "Jack");
-
-
-        foreach (var name in names)          // iterating list element 
+        foreach (string name in names)
         {
-            Console.WriteLine(names);
+            Console.WriteLine(name);
         }
+
+        Console.WriteLine("-------------");
+        Console.WriteLine( names.Peek());
+        Console.WriteLine( names.Pop());
+        Console.WriteLine("after pop, peek element: " + names.Peek());
+
     }
 }
+
+
