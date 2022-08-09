@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Stack
+public class Queue
 {
     public static void Main(string[] args)
     {
         
-       Stack<string>names = new Stack<string>();      
-        names.Push("Sanjay");
-        names.Push("Rahul");
-        names.Push("Nitish");
-        names.Push("Ramesh");
-        names.Push("Jack");
+       Queue<string>names = new Queue<string>();      
+        names.Enqueue("Sanjay");
+        names.Enqueue("Rahul");
+        names.Enqueue("Nitish");
+        names.Enqueue("Ramesh");
+        names.Enqueue("Jack");
         
        
 
@@ -22,8 +22,8 @@ public class Stack
 
         Console.WriteLine("-------------");
         Console.WriteLine( names.Peek());
-        Console.WriteLine( names.Pop());
-        Console.WriteLine("after pop, peek element: " + names.Peek());
+        Console.WriteLine( names.Dequeue());
+        Console.WriteLine("after pop, peek element: " + names.Peek()); //next element name
 
     }
 }
