@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class LinkedList
+public class Dictionary
 {
     public static void Main(string[] args)
     {
-        
-       var names = new LinkedList<string>();      
-        names.AddLast("Sanjay");
-        names.AddLast("Rahul");
-        names.AddLast("Nitish");
-        names.AddLast("Ramesh");
-        names.AddFirst("Jack");
 
-        LinkedListNode<string> node = names.Find("Ramesh");
-        names.AddBefore(node,"Rita");
-        names.AddAfter(node,"Tina");
+        Dictionary<int, string> names = new Dictionary<int,string>();      
+        names.Add(1,"Sanjay");
+        names.Add(2,"Rahul");
+        names.Add(3,"Nitish");
+        names.Add(4,"Ramesh");
+        names.Add(5,"Jack");
+        names.Remove(5);
+
+       
        
 
-        foreach (string name in names)
+        foreach (KeyValuePair<int,string> keyValues in names)
         {
-            Console.WriteLine(name);
+            Console.WriteLine(keyValues.Key+" "+ keyValues.Value);
         }
 
         Console.WriteLine("-------------");
